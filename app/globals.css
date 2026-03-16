@@ -176,6 +176,9 @@ a {
   border: none;
   background: transparent;
   cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
 }
 
 .nav-caret {
@@ -884,6 +887,27 @@ a {
   .site-nav-mobile .nav-link {
     width: 100%;
     justify-content: flex-start;
+  }
+
+  /* Make top-level mobile items consistent (links vs buttons). */
+  .site-nav-mobile > .nav-link,
+  .site-nav-mobile .nav-group-mobile > .nav-link-parent {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: 0.65rem 0.9rem;
+  }
+
+  /* Dropdown items are slightly smaller so parents read like headings. */
+  .site-nav-mobile .nav-dropdown-mobile .nav-link-sub {
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .site-nav-mobile button.nav-link {
+    appearance: none;
+    -webkit-appearance: none;
   }
 
   .page {
