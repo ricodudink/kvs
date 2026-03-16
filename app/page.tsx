@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { HeroSlider } from "./components/HeroSlider";
 
 export default function HomePage() {
   return (
@@ -26,7 +26,9 @@ export default function HomePage() {
             fantastisch evenement.
           </p>
         </div>
-        <div className="hero-media" />
+        <div className="hero-media">
+          <HeroSlider />
+        </div>
       </section>
 
       <section className="grid">
