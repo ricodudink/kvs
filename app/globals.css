@@ -486,7 +486,6 @@ a {
   color: var(--muted);
   opacity: 0.85;
 }
-}
 
 @media (max-width: 720px) {
   .site-header-inner {
