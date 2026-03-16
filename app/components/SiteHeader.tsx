@@ -59,19 +59,13 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header-inner">
         <Link href="/" className="brand">
-          <span className="brand-mark-wrapper">
-            <Image
-              src="/images/logo.png"
-              alt="Logo De Kindervakantiespelen"
-              width={28}
-              height={28}
-              className="brand-logo logo-round"
-            />
-            <span className="brand-sun" aria-hidden="true" />
-          </span>
-          <span className="brand-text">
-            De <strong>Kindervakantiespelen</strong>
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Logo De Kindervakantiespelen"
+            width={40}
+            height={40}
+            className="brand-logo-plain"
+          />
         </Link>
 
         <nav className="site-nav" aria-label="Hoofdmenu">
