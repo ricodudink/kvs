@@ -38,7 +38,7 @@ export default function HomePage() {
           </div>
           <div className="hero-banner">
             <Image
-              src="/images/banner.png"
+              src="/images/Banner.png"
               alt="Kindervakantiespelen banner"
               width={640}
               height={360}
