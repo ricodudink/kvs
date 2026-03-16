@@ -7,7 +7,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-text">
           <p className="hero-eyebrow">Wervershoof • Basisschoolleeftijd</p>
-          <h1>Het leukste evenement voor kids in de vakantie</h1>
+          <h1>Het leukste vakantiefeest voor kids in Wervershoof</h1>
           <p className="hero-sub">
             De Kindervakantiespelen is hét vakantiefeest voor kinderen uit
             Wervershoof en omgeving. Een week vol spel, sport, creativiteit en
@@ -22,8 +22,7 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="hero-note">
-            Groot feest voor kinderen in de basisschoolleeftijd. Ieder jaar een
-            fantastisch evenement.
+            Al sinds 1970 een groot feest voor kinderen in de basisschoolleeftijd.
           </p>
         </div>
         <div className="hero-media">
@@ -49,23 +48,42 @@ export default function HomePage() {
             onvergetelijke tijd, speciaal voor kinderen in de basisschoolleeftijd.
           </p>
         </article>
-        <article className="card">
-          <h2>Veiligheid voorop</h2>
+        <article className="card card-with-icon">
+          <h2>Bouwen & ontdekken</h2>
           <p>
-            Veiligheid staat bij ons altijd centraal. Op elke locatie zijn minimaal
-            twee personen leiding aanwezig en bij vervoer zorgen we voor veilige
-            oversteekplaatsen. Tijdens het zwemmen houden we extra toezicht in en
-            rond het water.
+            Hutten bouwen, spellen op het veld en samen een groot huttendorp
+            neerzetten bij De Westrand – voor veel kinderen hét hoogtepunt van
+            de week.
+          </p>
+        </article>
+        <article className="card card-with-icon">
+          <h2>Waterpret & buiten zijn</h2>
+          <p>
+            We zijn zoveel mogelijk buiten. Met spelletjes, waterpret en sport
+            beleven kinderen echt het vakantiegevoel, altijd met goede
+            begeleiding.
+          </p>
+        </article>
+      </section>
+
+      <section className="grid grid-highlight">
+        <article className="card">
+          <h2>Veiligheid staat voorop</h2>
+          <p>
+            Op elke locatie, zoals De Schoof en De Westrand, zijn altijd minimaal
+            twee personen leiding aanwezig. Bij vervoer zorgen we voor veilige
+            oversteekplaatsen en extra toezicht.
           </p>
           <Link href="/veiligheid" className="card-link">
             Meer over veiligheid
           </Link>
         </article>
         <article className="card">
-          <h2>Word vrijwilliger</h2>
+          <h2>Vrijwilligers maken het mogelijk</h2>
           <p>
-            Vind je het leuk om met kinderen te werken en wil je een gezellige en
-            actieve invulling van je zomervakantie? Dan hoor je bij ons thuis.
+            Ieder jaar staat er een grote groep enthousiaste vrijwilligers klaar.
+            Samen zorgen zij dat De Kindervakantiespelen kan blijven bestaan en
+            dat elke editie weer een feestje wordt.
           </p>
           <Link href="/vrijwilligers" className="card-link">
             Alles over vrijwilligerswerk

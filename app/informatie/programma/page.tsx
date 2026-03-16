@@ -25,7 +25,7 @@ export default function ProgrammaPage() {
       </section>
 
       <section className="card">
-        <h2>Maandag</h2>
+        <h2>Maandag – kennismaken & spel</h2>
         <p>
           De dag start om 09.00 uur met een gezamenlijk openingsmoment in de kuil
           van De Schoof. Daarna maken de vrijwilligers de groepen compleet en start
@@ -35,7 +35,7 @@ export default function ProgrammaPage() {
       </section>
 
       <section className="card">
-        <h2>Dinsdag & dinsdagavond</h2>
+        <h2>Dinsdag & dinsdagavond – spelen & open avond</h2>
         <p>
           Op dinsdag komen de kinderen opnieuw samen in de kuil van De Schoof en
           volgt een dag vol activiteiten met de eigen groep. In de avond is er een
@@ -45,7 +45,7 @@ export default function ProgrammaPage() {
       </section>
 
       <section className="card">
-        <h2>Woensdag – overnachten</h2>
+        <h2>Woensdag – huttendorp & overnachten</h2>
         <p>
           Woensdag worden de kinderen verwelkomd op De Westrand. De vrijwilligers
           maken de groepen compleet en samen richten zij de tenten of hutten in.

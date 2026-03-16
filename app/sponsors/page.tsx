@@ -25,6 +25,16 @@ export default function SponsorsPage() {
         </p>
       </section>
 
+      <section className="card">
+        <h2>Wat jouw steun mogelijk maakt</h2>
+        <p>
+          Dankzij onze sponsors kunnen we materialen voor het huttendorp kopen,
+          leuke activiteiten organiseren, terrein en vervoer regelen en de
+          deelnamekosten laag houden. Zo blijft De Kindervakantiespelen voor
+          zoveel mogelijk gezinnen bereikbaar.
+        </p>
+      </section>
+
       <section className="card callout">
         <h2>Sponsor worden?</h2>
         <p>

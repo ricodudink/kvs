@@ -6,15 +6,15 @@ import Image from "next/image";
 const slides = [
   {
     src: "/images/Banner.png",
-    alt: "Kinderen spelen tijdens De Kindervakantiespelen"
+    alt: "Kinderen spelen tijdens De Kindervakantiespelen in Wervershoof"
   },
   {
     src: "/images/Banner.png",
-    alt: "Zomerse sfeer tijdens De Kindervakantiespelen"
+    alt: "Zomerse sfeer tijdens De Kindervakantiespelen bij De Westrand"
   },
   {
     src: "/images/Banner.png",
-    alt: "Groep kinderen met vrijwilligers"
+    alt: "Groep kinderen met vrijwilligers tijdens De Kindervakantiespelen"
   }
 ];
 
