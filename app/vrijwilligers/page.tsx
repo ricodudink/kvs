@@ -26,7 +26,7 @@ export default function VrijwilligersPage() {
         tabIndex={-1}
         aria-labelledby="vrijwilligers-nieuw-heading"
       >
-        <h2 id="vrijwilligers-nieuw-heading">Nieuw als vrijwilliger</h2>
+        <h2 id="vrijwilligers-nieuw-heading">Nieuwe vrijwilliger</h2>
         <p>
           Lijkt het je leuk om voor het eerst mee te doen als vrijwilliger bij De
           Kindervakantiespelen? We vertellen je graag wat je kunt verwachten.
@@ -49,16 +49,21 @@ export default function VrijwilligersPage() {
       </section>
 
       <section
-        id="vrijwilligers-bestaand"
+        id="vrijwilligers-over"
         className="card"
         tabIndex={-1}
-        aria-labelledby="vrijwilligers-bestaand-heading"
+        aria-labelledby="vrijwilligers-over-heading"
       >
-        <h2 id="vrijwilligers-bestaand-heading">Voor bestaande vrijwilligers</h2>
+        <h2 id="vrijwilligers-over-heading">Over onze vrijwilligers</h2>
         <p>
-          Ben je al eerder vrijwilliger geweest bij De Kindervakantiespelen? Fijn
-          dat je (weer) aanhaakt. Hieronder vind je praktische informatie en
-          afspraken.
+          Zonder vrijwilligers geen Kindervakantiespelen. Ieder jaar staat er een
+          grote groep enthousiaste jongeren en volwassenen klaar om er samen een
+          onvergetelijke week van te maken.
+        </p>
+        <p>
+          Als vrijwilliger werk je in een gezellig team. Je bedenkt en begeleidt
+          activiteiten, helpt bij het opbouwen en afbreken, slaapt misschien op
+          het kamp en viert samen met de kinderen een echte vakantieweek.
         </p>
         <h3>Wat wij jou bieden</h3>
         <ul className="list">
@@ -87,6 +92,14 @@ export default function VrijwilligersPage() {
             kunt vallen. Veel vrijwilligers komen ieder jaar terug.
           </li>
         </ul>
+
+        <h3>Wie onze vrijwilligers zijn</h3>
+        <p>
+          Onze vrijwilligers zijn vaak oud-deelnemers, jongeren die een
+          maatschappelijke stage doen en volwassenen die het leuk vinden om met
+          kinderen te werken. Wat ze gemeen hebben: ze houden van aanpakken,
+          samenwerken en buiten bezig zijn.
+        </p>
 
         <h3>Wat wij van jou verwachten</h3>
         <ul className="list">
@@ -135,6 +148,32 @@ export default function VrijwilligersPage() {
           </li>
           <li>Week 2 – maandag 13 t/m donderdag 16 juli 2026.</li>
         </ul>
+      </section>
+
+      <section
+        id="vrijwilligers-werkgroep"
+        className="card"
+        tabIndex={-1}
+        aria-labelledby="vrijwilligers-werkgroep-heading"
+      >
+        <h2 id="vrijwilligers-werkgroep-heading">Werkgroep (organisatie)</h2>
+        <p>
+          De Kindervakantiespelen wordt georganiseerd door een werkgroep van
+          vrijwilligers binnen Stichting Sociaal Cultureel Centrum De Schoof. Deze
+          groep is het hele jaar door bezig met de voorbereiding van het
+          programma, de veiligheid, financiën en communicatie.
+        </p>
+        <p>
+          De werkgroep zorgt dat er voldoende vrijwilligers zijn, dat locaties en
+          materialen geregeld zijn en dat alles tijdens de week soepel verloopt.
+          Samen met de achterban van De Schoof en onze sponsors maken zij De
+          Kindervakantiespelen mogelijk.
+        </p>
+        <p>
+          Heb je vragen over de organisatie of wil je iets betekenen in de
+          werkgroep? Neem dan contact op via de contactpagina van De
+          Kindervakantiespelen.
+        </p>
       </section>
 
       <section className="card callout">

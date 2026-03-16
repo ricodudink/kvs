@@ -762,21 +762,21 @@ a {
 }
 
 .chair-new {
-  left: 8%;
+  left: 6%;
   bottom: 20%;
   background: radial-gradient(circle at 30% 20%, #fef9c3, transparent 60%),
     linear-gradient(135deg, #facc15, #f97316);
   color: #1f2937;
 }
 
-.chair-existing:nth-of-type(2) {
-  left: 60%;
-  bottom: 26%;
+.chair-community {
+  left: 36%;
+  bottom: 40%;
 }
 
-.chair-existing:nth-of-type(3) {
-  left: 32%;
-  bottom: 40%;
+.chair-organization {
+  left: 66%;
+  bottom: 24%;
 }
 
 .chair-icon {

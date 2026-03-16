@@ -2,16 +2,22 @@
 
 import { useCallback } from "react";
 
+type CampfireMode = "new" | "community" | "organization";
+
 type CampfireSceneProps = {
-  onSelect?(mode: "new" | "existing"): void;
+  onSelect?(mode: CampfireMode): void;
 };
 
 export function CampfireScene({ onSelect }: CampfireSceneProps) {
   const handleSelect = useCallback(
-    (mode: "new" | "existing") => {
+    (mode: CampfireMode) => {
       onSelect?.(mode);
       const targetId =
-        mode === "new" ? "vrijwilligers-nieuw" : "vrijwilligers-bestaand";
+        mode === "new"
+          ? "vrijwilligers-nieuw"
+          : mode === "community"
+          ? "vrijwilligers-over"
+          : "vrijwilligers-werkgroep";
       const el = document.getElementById(targetId);
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -29,9 +35,8 @@ export function CampfireScene({ onSelect }: CampfireSceneProps) {
       <div className="campfire-intro">
         <h2 id="campfire-heading">Kies jouw plek bij het kampvuur</h2>
         <p>
-          Ga je voor een nieuwe plek bij het vuur als nieuwe vrijwilliger, of
-          schuif je aan bij de groep die al jaren De Kindervakantiespelen
-          mogelijk maakt?
+          Ben je nieuw, wil je meer weten over onze vrijwilligers of zoek je info
+          over de werkgroep? Kies een stoel en we wijzen je de weg.
         </p>
       </div>
 
@@ -56,24 +61,24 @@ export function CampfireScene({ onSelect }: CampfireSceneProps) {
 
           <button
             type="button"
-            className="campfire-chair chair-existing"
-            onClick={() => handleSelect("existing")}
-            aria-label="Ik ben al vrijwilliger"
+            className="campfire-chair chair-community"
+            onClick={() => handleSelect("community")}
+            aria-label="Lees meer over onze vrijwilligers"
             role="listitem"
           >
-            <span className="chair-icon">👤</span>
-            <span className="chair-label">Ik ben al vrijwilliger</span>
+            <span className="chair-icon">👥</span>
+            <span className="chair-label">Over onze vrijwilligers</span>
           </button>
 
           <button
             type="button"
-            className="campfire-chair chair-existing"
-            onClick={() => handleSelect("existing")}
-            aria-label="Vrijwilliger met ervaring"
+            className="campfire-chair chair-organization"
+            onClick={() => handleSelect("organization")}
+            aria-label="Meer over de werkgroep en organisatie"
             role="listitem"
           >
-            <span className="chair-icon">⭐</span>
-            <span className="chair-label">Ervaren vrijwilliger</span>
+            <span className="chair-icon">🏕️</span>
+            <span className="chair-label">Werkgroep</span>
           </button>
         </div>
       </div>
