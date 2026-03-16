@@ -732,6 +732,18 @@ a {
   transform: translateX(-50%) translateY(-2px);
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .campfire-hotspot::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  .campfire-hotspot {
+    box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.55);
+    border-radius: 999px;
+  }
+}
+
 .hotspot-new {
   left: 6%;
 }
@@ -850,6 +862,10 @@ a {
     );
     border-bottom: 1px solid rgba(15, 23, 42, 0.06);
     box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  }
+
+  .site-nav-mobile.site-nav-mobile-open {
+    display: flex;
   }
 
   .nav-group-mobile {
