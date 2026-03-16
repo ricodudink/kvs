@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Het leukste evenement voor kinderen in de basisschoolleeftijd in Wervershoof en omgeving.",
   icons: {
-    icon: "/icon.png"
+    icon: "/images/icon.png"
   }
 };
 
@@ -22,10 +23,13 @@ export default function RootLayout({
         <header className="site-header">
           <div className="site-header-inner">
             <Link href="/" className="brand">
-              <span className="brand-mark" aria-hidden="true" />
-              <span className="brand-text">
-                De <strong>Kindervakantiespelen</strong>
-              </span>
+              <Image
+                src="/images/logo.png"
+                alt="Logo De Kindervakantiespelen"
+                width={48}
+                height={48}
+              />
+              <span className="brand-text">De Kindervakantiespelen</span>
             </Link>
             <nav className="site-nav" aria-label="Hoofdmenu">
               <Link href="/" className="nav-link">

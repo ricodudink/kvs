@@ -29,7 +29,7 @@ export default function HomePage() {
         <div className="hero-media">
           <div className="hero-logo-card">
             <Image
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Logo De Kindervakantiespelen"
               width={120}
               height={120}
