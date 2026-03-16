@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback } from "react";
+import Image from "next/image";
 
 type CampfireMode = "new" | "community" | "organization";
 
@@ -40,46 +41,35 @@ export function CampfireScene({ onSelect }: CampfireSceneProps) {
         </p>
       </div>
 
-      <div className="campfire-scene" role="list">
-        <div className="campfire-elements">
-          <div className="campfire-fire" aria-hidden="true">
-            <div className="campfire-flame campfire-flame-main" />
-            <div className="campfire-flame campfire-flame-small" />
-            <div className="campfire-logs" />
-          </div>
+      <div className="campfire-scene">
+        <div className="campfire-image-wrapper">
+          <Image
+            src="/images/campfire.png"
+            alt="Kampvuur met stoelen voor vrijwilligers bij De Kindervakantiespelen"
+            width={1536}
+            height={1024}
+            className="campfire-image"
+            priority
+          />
 
           <button
             type="button"
-            className="campfire-chair chair-new"
+            className="campfire-hotspot hotspot-new"
             onClick={() => handleSelect("new")}
             aria-label="Nieuwe vrijwilliger, meld je aan"
-            role="listitem"
-          >
-            <span className="chair-icon">?</span>
-            <span className="chair-label">Nieuwe vrijwilliger</span>
-          </button>
-
+          />
           <button
             type="button"
-            className="campfire-chair chair-community"
+            className="campfire-hotspot hotspot-community"
             onClick={() => handleSelect("community")}
             aria-label="Lees meer over onze vrijwilligers"
-            role="listitem"
-          >
-            <span className="chair-icon">👥</span>
-            <span className="chair-label">Over onze vrijwilligers</span>
-          </button>
-
+          />
           <button
             type="button"
-            className="campfire-chair chair-organization"
+            className="campfire-hotspot hotspot-organization"
             onClick={() => handleSelect("organization")}
             aria-label="Meer over de werkgroep en organisatie"
-            role="listitem"
-          >
-            <span className="chair-icon">🏕️</span>
-            <span className="chair-label">Werkgroep</span>
-          </button>
+          />
         </div>
       </div>
     </section>
