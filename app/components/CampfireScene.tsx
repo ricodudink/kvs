@@ -57,18 +57,21 @@ export function CampfireScene({ onSelect }: CampfireSceneProps) {
             className="campfire-hotspot hotspot-new"
             onClick={() => handleSelect("new")}
             aria-label="Nieuwe vrijwilliger, meld je aan"
+            data-label="Nieuwe vrijwilliger"
           />
           <button
             type="button"
             className="campfire-hotspot hotspot-community"
             onClick={() => handleSelect("community")}
             aria-label="Lees meer over onze vrijwilligers"
+            data-label="Over onze vrijwilligers"
           />
           <button
             type="button"
             className="campfire-hotspot hotspot-organization"
             onClick={() => handleSelect("organization")}
             aria-label="Meer over de werkgroep en organisatie"
+            data-label="Werkgroep (organisatie)"
           />
         </div>
       </div>

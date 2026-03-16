@@ -666,7 +666,7 @@ a {
 
 .campfire-scene {
   border-radius: var(--radius-lg);
-  padding: 0.6rem;
+  padding: 0.8rem 0.8rem 1rem;
   background: linear-gradient(
     135deg,
     rgba(15, 23, 42, 0.9),
@@ -678,8 +678,10 @@ a {
 }
 
 .campfire-image-wrapper {
-  position: absolute;
-  inset: 0.3rem;
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  aspect-ratio: 3 / 2;
   border-radius: calc(var(--radius-lg) - 4px);
   overflow: hidden;
 }
@@ -692,9 +694,9 @@ a {
 
 .campfire-hotspot {
   position: absolute;
-  bottom: 10%;
-  width: 20%;
-  height: 30%;
+  bottom: 8%;
+  width: 22%;
+  height: 34%;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -707,25 +709,48 @@ a {
   border-radius: 999px;
 }
 
+.campfire-hotspot::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 50%;
+  bottom: 102%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.92);
+  color: #f9fafb;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.campfire-hotspot:hover::after,
+.campfire-hotspot:focus-visible::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+}
+
 .hotspot-new {
-  left: 7%;
+  left: 6%;
 }
 
 .hotspot-community {
-  left: 40%;
+  left: 39%;
 }
 
 .hotspot-organization {
-  right: 7%;
+  right: 6%;
 }
 
 @media (max-width: 900px) {
   .campfire-scene {
-    padding: 0.4rem;
+    padding: 0.6rem 0.6rem 0.8rem;
   }
 
   .campfire-hotspot {
-    height: 28%;
+    height: 32%;
   }
 }
 
