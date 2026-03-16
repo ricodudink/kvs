@@ -90,7 +90,9 @@ export default function VrijwilligersPage() {
         </p>
       </header>
 
-      <CampfireScene />
+      <section className="card">
+        <CampfireScene />
+      </section>
 
       <Section id="vrijwilligers-nieuw" title="Nieuwe vrijwilliger">
         <p>
