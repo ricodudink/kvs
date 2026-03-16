@@ -33,19 +33,23 @@ export default function HomePage() {
               alt="Logo De Kindervakantiespelen"
               width={120}
               height={120}
+              className="logo-round"
             />
             <p>De Kindervakantiespelen</p>
           </div>
-          <div className="hero-banner">
-            <Image
-              src="/images/Banner.png"
-              alt="Kindervakantiespelen banner"
-              width={640}
-              height={360}
-              priority
-            />
-          </div>
         </div>
+      </section>
+
+      <section className="banner-fullbleed" aria-label="Sfeerbanner">
+        <Image
+          src="/images/Banner.png"
+          alt="Kindervakantiespelen banner"
+          width={1600}
+          height={520}
+          priority
+          sizes="100vw"
+          className="banner-image"
+        />
       </section>
 
       <section className="grid">

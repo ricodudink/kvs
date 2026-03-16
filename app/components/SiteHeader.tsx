@@ -63,9 +63,9 @@ export function SiteHeader() {
             <Image
               src="/images/logo.png"
               alt="Logo De Kindervakantiespelen"
-              width={40}
-              height={40}
-              className="brand-logo"
+              width={28}
+              height={28}
+              className="brand-logo logo-round"
             />
             <span className="brand-sun" aria-hidden="true" />
           </span>
